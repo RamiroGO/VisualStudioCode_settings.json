@@ -1,0 +1,191 @@
+{
+    "workbench.editorAssociations": {
+        "*.html": "default"
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    "liveServer.settings.donotShowInfoMsg": true,
+    "git.enableSmartCommit": true,
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": true,
+    "tabnine.experimentalAutoImports": true,
+    "workbench.preferredLightColorTheme": "Default Dark+",
+    "workbench.colorCustomizations": {
+        "tab.activeBackground": "#404040", // color de la pestaña activa.
+        "tab.activeBorder": "#ff0000", // color de borde inferior en la pestaña activa.
+        "tab.hoverBackground": "#00776b" // color de la pestaña activa al pasar el mouse encima.
+        // "tab.inactiveBackground": "#ff0000"
+    },
+    "workbench.editor.decorations.colors": true,
+    "workbench.editor.closeOnFileDelete": false,
+    "workbench.editor.enablePreview": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "window.autoDetectHighContrast": false,
+    "window.closeWhenEmpty": true,
+    "window.openWithoutArgumentsInNewWindow": "on",
+    "editor.linkedEditing": true,
+    // Modificar el texto y la sintaxis del editor:
+    // 1. Hacer Ctrl+Shift+P
+    // 2. Developer: Inspect Editor Tokens and Scopes
+    // 3. Llevar el cursor hasta el tipo de texto que se pretende identificar para cambiar su color 
+    // 4. Seleccionar el "textmate scopes" en el menú que se despliega, correspondiente al tipo de código que se pretende modificar su color.
+    // 5. Copiar y pegar el valor de "textmate scopes" en el scope del siguiente código.
+    // 	variable.other.object.js
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "string.quoted.single.js"
+                ],
+                "settings": {
+                    "foreground": "#FF0000",
+                }
+            },
+            {
+                "scope": [
+                    "string.quoted.double.js",
+                ],
+                "settings": {
+                    "foreground": "#C00000"
+                }
+            },
+            {
+                "scope": [
+                    "meta.object-literal.key.js",
+                    "variable.other.property.js",
+                ],
+                "settings": {
+                    "foreground": "#569CD6",
+                }
+            },
+            {
+                "scope": [
+                    "support.function.js",
+                    "entity.name.function.js"
+                ],
+                "settings": {
+                    "foreground": "#0F0",
+                }
+            },
+            {
+                "scope": [
+                    "variable.other.readwrite.js",
+                ],
+                "settings": {
+                    "foreground": "#00DDff",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": [
+                    "variable.other.object.js",
+                    "variable.other"
+                ],
+                "settings": {
+                    "foreground": "#56D6D6",
+                }
+            },
+            {
+                "scope": [
+                    "keyword.control.conditional.js",
+                    "keyword.control.flow.js",
+                    "storage.type.function.arrow.js",
+                    "storage.type.js"
+                ],
+                "settings": {
+                    "foreground": "#00F",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": [
+                    "punctuation.definition.heading.markdown",
+                ],
+                "settings": {
+                    "foreground": "#A00",
+                }
+            },
+            {
+                "scope": [
+                    "markup.heading.markdown"
+                ],
+                "settings": {
+                    "foreground": "#FF0",
+                }
+            },
+            {
+                "scope": [
+                    "heading.4.markdown",
+                    "string.quoted.double.sql"
+                ],
+                "settings": {
+                    "foreground": "#D0D00D",
+                }
+            },
+            {
+                "scope": [
+                    "heading.5.markdown",
+                ],
+                "settings": {
+                    "foreground": "#569CD6",
+                }
+            },
+            {
+                "scope": [
+                    "comment.line.double-dash.sql",
+                ],
+                "settings": {
+                    "foreground": "#D0D00D",
+                }
+            }
+        ]
+    },
+    "editor.cursorStyle": "line",
+    "editor.dragAndDrop": true,
+    "editor.find.cursorMoveOnType": true,
+    "editor.formatOnType": true,
+    "editor.autoClosingQuotes": "always",
+    "editor.autoClosingDelete": "always",
+    "editor.autoSurround": "languageDefined",
+    "editor.autoClosingOvertype": "always",
+    "editor.autoClosingBrackets": "always",
+    "editor.trimAutoWhitespace": true,
+    "editor.find.autoFindInSelection": "multiline",
+    "editorconfig.generateAuto": true,
+    "editor.acceptSuggestionOnCommitCharacter": true,
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.peekWidgetDefaultFocus": "editor",
+    "workbench.editor.tabCloseButton": "left",
+    "editor.multiCursorPaste": "full",
+    "editor.suggestSelection": "recentlyUsedByPrefix",
+    "editor.guides.bracketPairs": true,
+    "workbench.editor.showTabs": true,
+    "workbench.editor.highlightModifiedTabs": true,
+    "editor.selectionHighlight": true,
+    "editor.colorDecorators": true,
+    "editor.smartSelect.selectLeadingAndTrailingWhitespace": true,
+    "editor.autoIndent": "advanced",
+    "editor.find.seedSearchStringFromSelection": "selection",
+    // "editor.columnSelection": true,
+    "editor.tabCompletion": "on",
+    "editor.emptySelectionClipboard": true,
+    "editor.wordBasedSuggestionsMode": "allDocuments",
+    "editor.wordBasedSuggestions": true,
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "window.zoomLevel": -1,
+    "editor.bracketPairColorization.enabled": true,
+    "[css]": {
+        "editor.defaultFormatter": "MikeBovenlander.formate"
+    },
+    "[sql]": {
+        "editor.defaultFormatter": "mtxr.sqltools"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "workbench.colorTheme": "Dobri Next -C02- Indigo",
+    "editor.insertSpaces": false
+}
