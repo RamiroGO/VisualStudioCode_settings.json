@@ -41,12 +41,12 @@
                     "string.quoted.single.js"
                 ],
                 "settings": {
-                    "foreground": "#FF0000",
+                    "foreground": "#FF0000"
                 }
             },
             {
                 "scope": [
-                    "string.quoted.double.js",
+                    "string.quoted.double.js"
                 ],
                 "settings": {
                     "foreground": "#C00000"
@@ -55,10 +55,10 @@
             {
                 "scope": [
                     "meta.object-literal.key.js",
-                    "variable.other.property.js",
+                    "variable.other.property.js"
                 ],
                 "settings": {
-                    "foreground": "#569CD6",
+                    "foreground": "#569CD6"
                 }
             },
             {
@@ -67,12 +67,12 @@
                     "entity.name.function.js"
                 ],
                 "settings": {
-                    "foreground": "#0F0",
+                    "foreground": "#0F0"
                 }
             },
             {
                 "scope": [
-                    "variable.other.readwrite.js",
+                    "variable.other.readwrite.js"
                 ],
                 "settings": {
                     "foreground": "#00DDff",
@@ -85,11 +85,12 @@
                     "variable.other"
                 ],
                 "settings": {
-                    "foreground": "#56D6D6",
+                    "foreground": "#56D6D6"
                 }
             },
             {
                 "scope": [
+                    "keyword.other.sql",
                     "keyword.control.conditional.js",
                     "keyword.control.flow.js",
                     "storage.type.function.arrow.js",
@@ -102,10 +103,10 @@
             },
             {
                 "scope": [
-                    "punctuation.definition.heading.markdown",
+                    "punctuation.definition.heading.markdown"
                 ],
                 "settings": {
-                    "foreground": "#A00",
+                    "foreground": "#A00"
                 }
             },
             {
@@ -113,7 +114,7 @@
                     "markup.heading.markdown"
                 ],
                 "settings": {
-                    "foreground": "#FF0",
+                    "foreground": "#FF0"
                 }
             },
             {
@@ -123,22 +124,24 @@
                 ],
                 "settings": {
                     "foreground": "#D0D00D",
+                    "fontStyle": ""
                 }
             },
             {
                 "scope": [
-                    "heading.5.markdown",
+                    "heading.5.markdown"
                 ],
                 "settings": {
-                    "foreground": "#569CD6",
+                    "foreground": "#569CD6"
                 }
             },
             {
                 "scope": [
-                    "comment.line.double-dash.sql",
+                    "comment.line.double-dash.sql"
                 ],
                 "settings": {
                     "foreground": "#D0D00D",
+                    "fontStyle": "bold underline"
                 }
             }
         ]
@@ -175,7 +178,6 @@
     "editor.wordBasedSuggestionsMode": "allDocuments",
     "editor.wordBasedSuggestions": true,
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "window.zoomLevel": -1,
     "editor.bracketPairColorization.enabled": true,
     "[css]": {
         "editor.defaultFormatter": "MikeBovenlander.formate"
@@ -186,6 +188,7 @@
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "workbench.colorTheme": "Dobri Next -C02- Indigo",
-    "editor.insertSpaces": false
+    "editor.insertSpaces": false,
+    "window.zoomLevel": -1,
+    "workbench.colorTheme": "Dobri Next -C04- Material"
 }

@@ -5,8 +5,8 @@ code --install-extension anseki.vscode-color
 code --install-extension baincd.markdown-color-plus
 code --install-extension bierner.markdown-preview-github-styles
 code --install-extension bradgashler.htmltagwrap
-code --install-extension Cardinal90.multi-cursor-case-preserve 
-code --install-extension christian-kohler.npm-intellisense     
+code --install-extension Cardinal90.multi-cursor-case-preserve
+code --install-extension christian-kohler.npm-intellisense
 code --install-extension CoenraadS.bracket-pair-colorizer
 code --install-extension cweijan.vscode-database-client2
 code --install-extension cweijan.vscode-mysql-client2
@@ -57,6 +57,7 @@ code --install-extension mtxr.sqltools
 code --install-extension mtxr.sqltools-driver-mysql
 code --install-extension nitedani.angular-essentials
 code --install-extension nrwl.angular-console
+code --install-extension oboki.sql-styler
 code --install-extension PKief.material-icon-theme
 code --install-extension pthorsson.vscode-jsp
 code --install-extension rangav.vscode-thunder-client
