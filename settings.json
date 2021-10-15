@@ -8,16 +8,19 @@
     "liveServer.settings.donotShowInfoMsg": true,
     "git.enableSmartCommit": true,
     "editor.minimap.enabled": false,
-    "breadcrumbs.enabled": false,
+    "breadcrumbs.enabled": true,
     "editor.renderWhitespace": "none",
     "editor.renderControlCharacters": true,
     "tabnine.experimentalAutoImports": true,
     "workbench.preferredLightColorTheme": "Default Dark+",
     "workbench.colorCustomizations": {
-        "tab.activeBackground": "#404040", // color de la pestaña activa.
-        "tab.activeBorder": "#ff0000", // color de borde inferior en la pestaña activa.
-        "tab.hoverBackground": "#00776b" // color de la pestaña activa al pasar el mouse encima.
-        // "tab.inactiveBackground": "#ff0000"
+        "tab.activeForeground": "#ff0000",
+        "tab.inactiveForeground": "#FFFF00",
+        "tab.activeBackground": "#000", // color de la pestaña activa.
+        "tab.inactiveBackground": "#080815",
+        "tab.activeBorder": "#f00", // color de borde inferior en la pestaña activa.
+        // "tab.border": "#00776b",
+        "tab.hoverBackground": "#00776b" // color de pestaña al pasar el mouse encima.
     },
     "workbench.editor.decorations.colors": true,
     "workbench.editor.closeOnFileDelete": false,
@@ -38,7 +41,32 @@
         "textMateRules": [
             {
                 "scope": [
-                    "string.quoted.single.js"
+                    "keyword.mysql",
+                    "keyword.other.DML.sql",
+                    "keyword.other.DDL.create.II.sql",
+                    "keyword.other.sql",
+                    "keyword.control.conditional.js",
+                    "keyword.control.flow.js",
+                    "storage.type.function.arrow.js",
+                    "storage.type.js"
+                ],
+                "settings": {
+                    "foreground": "#00F",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": [
+                    "comment"
+                ],
+                "settings": {
+                    "foreground": "#959595"
+                }
+            },
+            {
+                "scope": [
+                    "string.quoted.single.js",
+                    "invalid.illegal.character-not-allowed-here.html"
                 ],
                 "settings": {
                     "foreground": "#FF0000"
@@ -54,17 +82,12 @@
             },
             {
                 "scope": [
-                    "meta.object-literal.key.js",
-                    "variable.other.property.js"
-                ],
-                "settings": {
-                    "foreground": "#569CD6"
-                }
-            },
-            {
-                "scope": [
+                    "source.sql",
                     "support.function.js",
-                    "entity.name.function.js"
+                    "meta.function-call.js",
+                    "variable.parameter.js",
+                    "variable.other.object.js",
+                    "support.type.object.module.js"
                 ],
                 "settings": {
                     "foreground": "#0F0"
@@ -72,7 +95,22 @@
             },
             {
                 "scope": [
-                    "variable.other.readwrite.js"
+                    "support.function.table.sql",
+                    "constant.other.table-name.sql",
+                    "entity.name.function.js",
+                    "meta.var.expr.js",
+                    "variable.other.property.js"
+                ],
+                "settings": {
+                    "foreground": "#00DDff"
+                }
+            },
+            {
+                "scope": [
+                    "constant.other.database-name.sql",
+                    "meta.object-literal.key.js",
+                    "variable.other.readwrite.js",
+                    "variable.other.constant.js"
                 ],
                 "settings": {
                     "foreground": "#00DDff",
@@ -81,24 +119,11 @@
             },
             {
                 "scope": [
-                    "variable.other.object.js",
-                    "variable.other"
+                    "meta.object-literal.key.js",
+                    "heading.5.markdown"
                 ],
                 "settings": {
-                    "foreground": "#56D6D6"
-                }
-            },
-            {
-                "scope": [
-                    "keyword.other.sql",
-                    "keyword.control.conditional.js",
-                    "keyword.control.flow.js",
-                    "storage.type.function.arrow.js",
-                    "storage.type.js"
-                ],
-                "settings": {
-                    "foreground": "#00F",
-                    "fontStyle": "bold"
+                    "foreground": "#569CD6"
                 }
             },
             {
@@ -129,14 +154,6 @@
             },
             {
                 "scope": [
-                    "heading.5.markdown"
-                ],
-                "settings": {
-                    "foreground": "#569CD6"
-                }
-            },
-            {
-                "scope": [
                     "comment.line.double-dash.sql"
                 ],
                 "settings": {
@@ -155,14 +172,14 @@
     "editor.autoSurround": "languageDefined",
     "editor.autoClosingOvertype": "always",
     "editor.autoClosingBrackets": "always",
-    "editor.trimAutoWhitespace": true,
+    "editor.trimAutoWhitespace": false, // Cuando presionas enter, haces un nuevo renglón, el editor mantiene la sangría, pero si subes el cursor, estando esta configuración activa, perderás la sangría.
     "editor.find.autoFindInSelection": "multiline",
     "editorconfig.generateAuto": true,
     "editor.acceptSuggestionOnCommitCharacter": true,
     "editor.acceptSuggestionOnEnter": "on",
     "editor.peekWidgetDefaultFocus": "editor",
     "workbench.editor.tabCloseButton": "left",
-    "editor.multiCursorPaste": "full",
+    "editor.multiCursorPaste": "spread",
     "editor.suggestSelection": "recentlyUsedByPrefix",
     "editor.guides.bracketPairs": true,
     "workbench.editor.showTabs": true,
@@ -175,20 +192,38 @@
     // "editor.columnSelection": true,
     "editor.tabCompletion": "on",
     "editor.emptySelectionClipboard": true,
-    "editor.wordBasedSuggestionsMode": "allDocuments",
+    "editor.wordBasedSuggestionsMode": "matchingDocuments",
     "editor.wordBasedSuggestions": true,
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "editor.bracketPairColorization.enabled": true,
+    "editor.insertSpaces": false,
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "[css]": {
         "editor.defaultFormatter": "MikeBovenlander.formate"
     },
     "[sql]": {
-        "editor.defaultFormatter": "mtxr.sqltools"
+        "editor.defaultFormatter": "cweijan.vscode-database-client2"
     },
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "editor.insertSpaces": false,
     "window.zoomLevel": -1,
-    "workbench.colorTheme": "Dobri Next -C04- Material"
+    "workbench.colorTheme": "Dobri Next -C04- Material",
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "mssql.connections": [
+        {
+            "server": "{{put-server-name-here}}",
+            "database": "{{put-database-name-here}}",
+            "user": "{{put-username-here}}",
+            "password": "{{put-password-here}}"
+        }
+    ],
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "[handlebars]": {
+        "editor.defaultFormatter": "mohd-akram.vscode-html-format"
+    }
 }

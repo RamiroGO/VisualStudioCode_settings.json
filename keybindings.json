@@ -22,5 +22,158 @@
 		"key": "ctrl+b",
 		"command": "-markdown.extension.editing.toggleBold",
 		"when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+	},
+	{
+		"key": "ctrl+alt+left",
+		"command": "-workbench.action.moveEditorToPreviousGroup"
+	},
+	{
+		"key": "ctrl+alt+right",
+		"command": "-workbench.action.moveEditorToNextGroup"
+	},
+	{
+		"key": "shift+alt+1",
+		"command": "-workbench.action.moveEditorToFirstGroup"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-notebook.cell.focusInOutput",
+		"when": "notebookCellHasOutputs && notebookEditorFocused"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-notebook.focusNextEditor",
+		"when": "notebookEditorFocused && notebookOutputFocused"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-workbench.action.terminal.navigationModeFocusNext",
+		"when": "accessibilityModeEnabled && terminalA11yTreeFocus && terminalProcessSupported || accessibilityModeEnabled && terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-keybindings.editor.focusKeybindings",
+		"when": "inKeybindings && inKeybindingsSearch"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-list.scrollDown",
+		"when": "listFocus && !inputFocus"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-problems.action.focusProblemsFromFilter",
+		"when": "problemsFilterFocus"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-scrollLineDown",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-search.focus.nextInputBox",
+		"when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-selectNextSuggestion",
+		"when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "-notebook.cell.focusOutOutput",
+		"when": "notebookEditorFocused"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "-workbench.action.terminal.navigationModeFocusPrevious",
+		"when": "accessibilityModeEnabled && terminalA11yTreeFocus && terminalProcessSupported || accessibilityModeEnabled && terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "-list.scrollUp",
+		"when": "listFocus && !inputFocus"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "-scrollLineUp",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "-search.action.focusSearchFromResults",
+		"when": "firstMatchFocus && searchViewletVisible"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "-search.focus.previousInputBox",
+		"when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible && !searchInputBoxFocus"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "-selectPrevSuggestion",
+		"when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "editor.action.previousMatchFindAction",
+		"when": "editorFocus"
+	},
+	{
+		"key": "shift+f3",
+		"command": "-editor.action.previousMatchFindAction",
+		"when": "editorFocus"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "editor.action.previousSelectionMatchFindAction",
+		"when": "editorFocus"
+	},
+	{
+		"key": "ctrl+shift+f3",
+		"command": "-editor.action.previousSelectionMatchFindAction",
+		"when": "editorFocus"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "editor.action.nextSelectionMatchFindAction",
+		"when": "editorFocus"
+	},
+	{
+		"key": "ctrl+f3",
+		"command": "-editor.action.nextSelectionMatchFindAction",
+		"when": "editorFocus"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "editor.action.nextMatchFindAction",
+		"when": "editorFocus"
+	},
+	{
+		"key": "f3",
+		"command": "-editor.action.nextMatchFindAction",
+		"when": "editorFocus"
+	},
+	{
+		"key": "ctrl+shift+oem_comma",
+		"command": "cursorLineEnd",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+o s",
+		"command": "workbench.action.openSettings"
+	},
+	{
+		"key": "ctrl+oem_comma",
+		"command": "-workbench.action.openSettings"
+	},
+	{
+		"key": "ctrl+p",
+		"command": "-workbench.action.quickOpen"
+	},
+	{
+		"key": "ctrl+e",
+		"command": "-workbench.action.quickOpen"
 	}
 ]
