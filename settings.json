@@ -9,6 +9,11 @@
     "git.enableSmartCommit": true,
     "editor.minimap.enabled": false,
     "breadcrumbs.enabled": true,
+    "html.hover.references": true,
+    "editor.suggest.showReferences": true,
+    "editor.gotoLocation.multipleReferences": "peek",
+    "editor.gotoLocation.alternativeReferenceCommand": "",
+    "references.preferredLocation": "peek",
     "editor.renderWhitespace": "none",
     "editor.renderControlCharacters": true,
     "tabnine.experimentalAutoImports": true,
@@ -160,6 +165,14 @@
                     "foreground": "#D0D00D",
                     "fontStyle": "bold underline"
                 }
+            },
+            {
+                "scope": [
+                    "comment.block.handlebars"
+                ],
+                "settings": {
+                    "foreground": "#959595"
+                }
             }
         ]
     },
@@ -175,12 +188,9 @@
     "editor.trimAutoWhitespace": false, // Cuando presionas enter, haces un nuevo renglón, el editor mantiene la sangría, pero si subes el cursor, estando esta configuración activa, perderás la sangría.
     "editor.find.autoFindInSelection": "multiline",
     "editorconfig.generateAuto": true,
-    "editor.acceptSuggestionOnCommitCharacter": true,
-    "editor.acceptSuggestionOnEnter": "on",
     "editor.peekWidgetDefaultFocus": "editor",
     "workbench.editor.tabCloseButton": "left",
     "editor.multiCursorPaste": "spread",
-    "editor.suggestSelection": "recentlyUsedByPrefix",
     "editor.guides.bracketPairs": true,
     "workbench.editor.showTabs": true,
     "workbench.editor.highlightModifiedTabs": true,
@@ -190,13 +200,17 @@
     "editor.autoIndent": "advanced",
     "editor.find.seedSearchStringFromSelection": "selection",
     // "editor.columnSelection": true,
-    "editor.tabCompletion": "on",
     "editor.emptySelectionClipboard": true,
+    "editor.tabCompletion": "on",
+    "editor.accessibilityPageSize": 10,
+    "editor.acceptSuggestionOnCommitCharacter": true,
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.suggestSelection": "first",
     "editor.wordBasedSuggestionsMode": "matchingDocuments",
     "editor.wordBasedSuggestions": true,
+    "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration", // No configurar manualmente?
     "editor.bracketPairColorization.enabled": true,
     "editor.insertSpaces": false,
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "[css]": {
         "editor.defaultFormatter": "MikeBovenlander.formate"
     },
@@ -220,10 +234,24 @@
         }
     ],
     "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "javascript.updateImportsOnFileMove.enabled": "always",
     "[handlebars]": {
         "editor.defaultFormatter": "mohd-akram.vscode-html-format"
-    }
+    },
+    "git.autofetch": true,
+    "javascript.referencesCodeLens.showOnAllFunctions": true,
+    "typescript.referencesCodeLens.showOnAllFunctions": true,
+    "diffEditor.codeLens": true,
+    "javascript.referencesCodeLens.enabled": true,
+    "typescript.implementationsCodeLens.enabled": true,
+    "go.enableCodeLens": {
+        "references": true
+    },
+    "liveshare.languages.allowGuestCommandControl": true,
+    "typescript.referencesCodeLens.enabled": true, // Mostrar conteo de referencias en cada método.
+    "java.implementationsCodeLens.enabled": true,
+    "java.referencesCodeLens.enabled": true,
+    "xml.codeLens.enabled": true
 }
