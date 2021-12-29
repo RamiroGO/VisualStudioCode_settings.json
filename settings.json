@@ -1,4 +1,5 @@
 {
+    "files.autoSave":"onWindowChange",
     "workbench.editorAssociations": {
         "*.html": "default"
     },
@@ -20,7 +21,32 @@
     "tabnine.experimentalAutoImports": true,
     "workbench.colorTheme": "Dobri Next -C04- Material",
     // "workbench.preferredLightColorTheme": "Default Dark+",
+    "debug.showBreakpointsInOverviewRuler": false,
     "workbench.colorCustomizations": {
+        // Color del Borde de la Ventana, visible cuando no está maximizada.
+        // "window.activeBorder": "#ff0000",
+        // "window.inactiveBorder": "#ff0000",
+        "activityBar.background": "#0D1011", // Color de la Barra de Actividades, donde se seleccionan las carpetas y Extensiones de VSCode
+        "[Dobri Next -C04- Material]": {
+            "titleBar.inactiveBackground": "#060526",
+            // "banner.background": "#ff0000",
+            // "banner.foreground": "#ff0000",
+            // "banner.iconForeground": "#ff0000",
+            // "titleBar.activeBackground": "#ff0000",
+            // "titleBar.activeForeground": "#ff0000",
+            // "titleBar.border": "#ff0000",
+            "titleBar.inactiveForeground": "#666" // Color del texto de la barra de título al no estar activa la ventana.
+        },
+        // "activityBar.border": "#EBEBEB",
+        "sideBar.background": "#0D1011",
+        // "sideBar.border": "#EBEBEB",
+        // "sideBarSectionHeader.background": "#26597b",
+        // "sideBarTitle.foreground": "#EBEBEB",
+        // "tab.border": "#26597b",
+        // "scrollbarSlider.activeBackground": "#F0F0F0",
+        // "scrollbarSlider.background": "#007ACC",
+        // "scrollbarSlider.hoverBackground": "#007ACC",
+        // "scrollbar.shadow": "#007ACC",
         "tab.activeForeground": "#ff0000",
         "tab.inactiveForeground": "#FFFF00",
         "tab.activeBackground": "#000", // color de la pestaña activa.
@@ -29,13 +55,22 @@
         // "tab.border": "#00776b",
         "tab.hoverBackground": "#00776b" // color de pestaña al pasar el mouse encima.
     },
+    "window.autoDetectHighContrast": false,
+    "window.closeWhenEmpty": true,
+    "window.openWithoutArgumentsInNewWindow": "on",
+    "window.dialogStyle": "custom",
+    "window.newWindowDimensions": "offset",
+    // Alternar estilo de colores de la ventana de Visual Studio entre clásico o personalizado
+    "window.titleBarStyle": "custom",
+    "window.titleSeparator": " | ",
+    // Visibilidad de la Barra de Menú
+    "window.menuBarVisibility": "compact",
+    "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName}",
+    "window.doubleClickIconToClose": false,
     "workbench.editor.decorations.colors": true,
     "workbench.editor.closeOnFileDelete": false,
     "workbench.editor.enablePreview": true,
     "workbench.iconTheme": "material-icon-theme",
-    "window.autoDetectHighContrast": false,
-    "window.closeWhenEmpty": true,
-    "window.openWithoutArgumentsInNewWindow": "on",
     "editor.linkedEditing": true,
     // Modificar el texto y la sintaxis del editor:
     // 1. Hacer Ctrl+Shift+P
@@ -55,7 +90,8 @@
                     "keyword.control.conditional.js",
                     "keyword.control.flow.js",
                     "storage.type.function.arrow.js",
-                    "storage.type.js"
+                    "storage.type.js",
+                    "entity.name.tag"
                 ],
                 "settings": {
                     "foreground": "#00F",
@@ -72,6 +108,7 @@
             },
             {
                 "scope": [
+                    "text.html.derivative",
                     "string.quoted.single.js",
                     "invalid.illegal.character-not-allowed-here.html"
                 ],
@@ -94,7 +131,8 @@
                     "meta.function-call.js",
                     "variable.parameter.js",
                     "variable.other.object.js",
-                    "support.type.object.module.js"
+                    "support.type.object.module.js",
+                    "string.quoted.double.html"
                 ],
                 "settings": {
                     "foreground": "#0F0"
@@ -102,6 +140,7 @@
             },
             {
                 "scope": [
+                    "entity.other.attribute-name",
                     "support.function.table.sql",
                     "constant.other.table-name.sql",
                     "entity.name.function.js",
@@ -255,7 +294,7 @@
     "java.referencesCodeLens.enabled": true,
     "xml.codeLens.enabled": true,
     "[html]": {
-        "editor.defaultFormatter": "mohd-akram.vscode-html-format"
+        "editor.defaultFormatter": "j69.ejs-beautify"
     },
     "liveServer.settings.donotVerifyTags": true,
     "liveServer.settings.CustomBrowser": "microsoft-edge",
@@ -270,5 +309,8 @@
         "**/.settings": true,
         "**/.factorypath": true
     },
-    "window.zoomLevel": -1
+    "window.zoomLevel": -1,
+    "redhat.telemetry.enabled": true,
+    "explorer.confirmDragAndDrop": false,
+    "bracketPairColorizer.depreciation-notice": false
 }
