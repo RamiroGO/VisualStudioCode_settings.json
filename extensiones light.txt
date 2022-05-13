@@ -1,0 +1,16 @@
+code --install-extension bradgashler.htmltagwrap
+code --install-extension christian-kohler.npm-intellisense
+code --install-extension Dart-Code.dart-code
+code --install-extension ecmel.vscode-html-css
+code --install-extension formulahendry.auto-rename-tag    
+code --install-extension mohd-akram.vscode-html-format    
+code --install-extension MS-CEINTL.vscode-language-pack-es
+code --install-extension ms-vscode.vscode-typescript-next 
+code --install-extension ms-vsliveshare.vsliveshare       
+code --install-extension rangav.vscode-thunder-client     
+code --install-extension rifi2k.format-html-in-php        
+code --install-extension ritwickdey.LiveServer     
+code --install-extension Sophisticode.php-formatter
+code --install-extension tht13.html-preview-vscode 
+code --install-extension xdebug.php-debug
+code --install-extension xdebug.php-pack

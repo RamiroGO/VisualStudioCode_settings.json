@@ -1,5 +1,5 @@
 {
-    "files.autoSave":"onWindowChange",
+    "files.autoSave": "onWindowChange",
     "workbench.editorAssociations": {
         "*.html": "default"
     },
@@ -19,24 +19,29 @@
     "editor.renderWhitespace": "none",
     "editor.renderControlCharacters": true,
     "tabnine.experimentalAutoImports": true,
-    "workbench.colorTheme": "Dobri Next -C04- Material",
-    // "workbench.preferredLightColorTheme": "Default Dark+",
     "debug.showBreakpointsInOverviewRuler": false,
     "workbench.colorCustomizations": {
+        // "editor.selectionBackground": "#ff0000",
+        "editor.foreground": "#00ffff",
+        "editor.background": "#000000",
+        
+        "editor.foldBackground": "#55aa0033",
+        "peekViewEditor.background": "#00ff0033",
+        "editor.findMatchBackground": "#ff0000",
+        "editor.selectionBackground": "#00ffff55",
+        // "editorInfo.background": "#ff0000",
+        // "editor.findMatchBorder": "#ff0000",
+        // "editor.inlineValuesBackground": "#ff0000",
+        "editor.selectionHighlightBackground": "#00885533",
+        "editor.selectionHighlightBorder": "#0f05",
+        "editor.wordHighlightBorder": "#0ff6",
+        // "editor.inactiveSelectionBackground": "#ff000055",
+        "editor.focusedStackFrameHighlightBackground": "#ff0000",
+        
         // Color del Borde de la Ventana, visible cuando no está maximizada.
         // "window.activeBorder": "#ff0000",
         // "window.inactiveBorder": "#ff0000",
         "activityBar.background": "#0D1011", // Color de la Barra de Actividades, donde se seleccionan las carpetas y Extensiones de VSCode
-        "[Dobri Next -C04- Material]": {
-            "titleBar.inactiveBackground": "#060526",
-            // "banner.background": "#ff0000",
-            // "banner.foreground": "#ff0000",
-            // "banner.iconForeground": "#ff0000",
-            // "titleBar.activeBackground": "#ff0000",
-            // "titleBar.activeForeground": "#ff0000",
-            // "titleBar.border": "#ff0000",
-            "titleBar.inactiveForeground": "#666" // Color del texto de la barra de título al no estar activa la ventana.
-        },
         // "activityBar.border": "#EBEBEB",
         "sideBar.background": "#0D1011",
         // "sideBar.border": "#EBEBEB",
@@ -70,7 +75,6 @@
     "workbench.editor.decorations.colors": true,
     "workbench.editor.closeOnFileDelete": false,
     "workbench.editor.enablePreview": true,
-    "workbench.iconTheme": "material-icon-theme",
     "editor.linkedEditing": true,
     // Modificar el texto y la sintaxis del editor:
     // 1. Hacer Ctrl+Shift+P
@@ -91,7 +95,7 @@
                     "keyword.control.flow.js",
                     "storage.type.function.arrow.js",
                     "storage.type.js",
-                    "entity.name.tag"
+                    "entity.name.tag",
                 ],
                 "settings": {
                     "foreground": "#00F",
@@ -103,7 +107,7 @@
                     "comment"
                 ],
                 "settings": {
-                    "foreground": "#959595"
+                    "foreground": "#999"
                 }
             },
             {
@@ -129,6 +133,7 @@
                     "source.sql",
                     "support.function.js",
                     "meta.function-call.js",
+                    "variable.parameter",
                     "variable.parameter.js",
                     "variable.other.object.js",
                     "support.type.object.module.js",
@@ -144,8 +149,7 @@
                     "support.function.table.sql",
                     "constant.other.table-name.sql",
                     "entity.name.function.js",
-                    "meta.var.expr.js",
-                    "variable.other.property.js"
+                    "meta.var.expr.js"
                 ],
                 "settings": {
                     "foreground": "#00DDff"
@@ -154,7 +158,6 @@
             {
                 "scope": [
                     "constant.other.database-name.sql",
-                    "meta.object-literal.key.js",
                     "variable.other.readwrite.js",
                     "variable.other.constant.js"
                 ],
@@ -166,6 +169,7 @@
             {
                 "scope": [
                     "meta.object-literal.key.js",
+                    "variable.other.property.js",
                     "heading.5.markdown"
                 ],
                 "settings": {
@@ -255,9 +259,6 @@
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "[sql]": {
-        "editor.defaultFormatter": "cweijan.vscode-database-client2"
-    },
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
@@ -293,9 +294,6 @@
     "java.implementationsCodeLens.enabled": true,
     "java.referencesCodeLens.enabled": true,
     "xml.codeLens.enabled": true,
-    "[html]": {
-        "editor.defaultFormatter": "j69.ejs-beautify"
-    },
     "liveServer.settings.donotVerifyTags": true,
     "liveServer.settings.CustomBrowser": "microsoft-edge",
     "liveServer.settings.useLocalIp": true,
@@ -309,8 +307,14 @@
         "**/.settings": true,
         "**/.factorypath": true
     },
-    "window.zoomLevel": -1,
     "redhat.telemetry.enabled": true,
     "explorer.confirmDragAndDrop": false,
-    "bracketPairColorizer.depreciation-notice": false
+    "bracketPairColorizer.depreciation-notice": false,
+    "settingsSync.ignoredExtensions": [
+        "redhat.vscode-commons"
+    ],
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "window.zoomLevel": -1
 }
