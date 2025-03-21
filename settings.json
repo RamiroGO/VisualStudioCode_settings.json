@@ -1,7 +1,8 @@
 {
     "files.autoSave": "onWindowChange",
     "workbench.editorAssociations": {
-        "*.html": "default"
+        "*.html": "default",
+        "*.dat": "default"
     },
     "editor.codeActionsOnSave": {
         "source.fixAll": "explicit",
@@ -222,6 +223,8 @@
             }
         ]
     },
+    "editor.tabSize": 4,
+    "editor.detectIndentation": true,
     "editor.cursorStyle": "line",
     "editor.dragAndDrop": true,
     "editor.find.cursorMoveOnType": true,
@@ -318,6 +321,13 @@
     },
     "python.defaultInterpreterPath": "C:\\Users\\ramir\\AppData\\Local\\Microsoft\\WindowsApps\\python3.10.exe",
     "security.workspace.trust.untrustedFiles": "open",
+    "window.zoomLevel": -1,
     "workbench.editor.tabActionLocation": "left",
-    "window.zoomLevel": -1
+    "diffEditor.ignoreTrimWhitespace": false,
+    "files.associations": {
+        "*.rmd": "markdown"
+    },
+    "extensions.supportUntrustedWorkspaces": {
+        
+    }
 }
