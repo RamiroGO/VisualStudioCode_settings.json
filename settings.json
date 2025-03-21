@@ -4,8 +4,8 @@
         "*.html": "default"
     },
     "editor.codeActionsOnSave": {
-        "source.fixAll": true,
-        "source.organizeImports": false
+        "source.fixAll": "explicit",
+        "source.organizeImports": "never"
     },
     "liveServer.settings.donotShowInfoMsg": true,
     "git.enableSmartCommit": true,
@@ -95,7 +95,8 @@
                     "keyword.control.flow.js",
                     "storage.type.function.arrow.js",
                     "storage.type.js",
-                    "entity.name.tag",
+                    "meta.function.js",
+                    "entity.name.tag"
                 ],
                 "settings": {
                     "foreground": "#00F",
@@ -237,7 +238,7 @@
     "workbench.editor.tabCloseButton": "left",
     "editor.multiCursorPaste": "spread",
     "editor.guides.bracketPairs": true,
-    "workbench.editor.showTabs": true,
+    "workbench.editor.showTabs": "multiple",
     "workbench.editor.highlightModifiedTabs": true,
     "editor.selectionHighlight": true,
     "editor.colorDecorators": true,
@@ -252,12 +253,11 @@
     "editor.acceptSuggestionOnEnter": "on",
     "editor.suggestSelection": "first",
     "editor.wordBasedSuggestionsMode": "matchingDocuments",
-    "editor.wordBasedSuggestions": true,
+    "editor.wordBasedSuggestions": "matchingDocuments",
     "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration", // No configurar manualmente?
     "editor.bracketPairColorization.enabled": true,
     "editor.insertSpaces": false,
     "[css]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
@@ -316,5 +316,8 @@
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
+    "python.defaultInterpreterPath": "C:\\Users\\ramir\\AppData\\Local\\Microsoft\\WindowsApps\\python3.10.exe",
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.editor.tabActionLocation": "left",
     "window.zoomLevel": -1
 }
