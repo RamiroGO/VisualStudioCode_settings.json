@@ -1,8 +1,11 @@
 {
     "files.autoSave": "onWindowChange",
     "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "{hexdiff}:/**/*.*": "hexEditor.hexedit",
         "*.html": "default",
-        "*.dat": "default"
+        "*.dat": "hexEditor.hexedit",
+        "*.sqlite": "default"
     },
     "editor.codeActionsOnSave": {
         "source.fixAll": "explicit",
@@ -25,7 +28,6 @@
         // "editor.selectionBackground": "#ff0000",
         "editor.foreground": "#00ffff",
         "editor.background": "#000000",
-        
         "editor.foldBackground": "#55aa0033",
         "peekViewEditor.background": "#00ff0033",
         "editor.findMatchBackground": "#ff0000",
@@ -38,7 +40,6 @@
         "editor.wordHighlightBorder": "#0ff6",
         // "editor.inactiveSelectionBackground": "#ff000055",
         "editor.focusedStackFrameHighlightBackground": "#ff0000",
-        
         // Color del Borde de la Ventana, visible cuando no está maximizada.
         // "window.activeBorder": "#ff0000",
         // "window.inactiveBorder": "#ff0000",
@@ -94,10 +95,17 @@
                     "keyword.other.sql",
                     "keyword.control.conditional.js",
                     "keyword.control.flow.js",
-                    "storage.type.function.arrow.js",
+                    "keyword.control.switch.js",
+                    "keyword.control.trycatch.js",
+                    "keyword.control.loop.js",
+                    "keyword.control.import.js",
+                    "keyword.control.export.js",
+                    "keyword.operator.comparison.js",
+                    "keyword.operator.assignment.js",
                     "storage.type.js",
-                    "meta.function.js",
-                    "entity.name.tag"
+                    "storage.type.function.js",
+                    "entity.name.tag",
+                    "punctuation.terminator.statement.js"
                 ],
                 "settings": {
                     "foreground": "#00F",
@@ -135,11 +143,24 @@
                     "source.sql",
                     "support.function.js",
                     "meta.function-call.js",
+                    "constant.numeric.decimal.js",
+                    "constant.numeric.hex.js",
+                    "constant.numeric.octal.js",
+                    "constant.numeric.binary.js",
+                    "constant.numeric.js",
+                    "constant.numeric.json",
+                    "support.variable.property.js",
                     "variable.parameter",
                     "variable.parameter.js",
                     "variable.other.object.js",
                     "support.type.object.module.js",
-                    "string.quoted.double.html"
+                    "string.quoted.double.html",
+                    "constant.language.boolean.true.js",
+                    "constant.language.boolean.false.js",
+                    "constant.language.null.js",
+                    "constant.language.undefined.js",
+                    "constant.language.nan.js",
+                    "constant.language.infinity.js"
                 ],
                 "settings": {
                     "foreground": "#0F0"
@@ -260,8 +281,7 @@
     "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration", // No configurar manualmente?
     "editor.bracketPairColorization.enabled": true,
     "editor.insertSpaces": false,
-    "[css]": {
-    },
+    "[css]": {},
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
@@ -321,13 +341,12 @@
     },
     "python.defaultInterpreterPath": "C:\\Users\\ramir\\AppData\\Local\\Microsoft\\WindowsApps\\python3.10.exe",
     "security.workspace.trust.untrustedFiles": "open",
-    "window.zoomLevel": -1,
     "workbench.editor.tabActionLocation": "left",
+    "window.zoomLevel": -1,
     "diffEditor.ignoreTrimWhitespace": false,
     "files.associations": {
         "*.rmd": "markdown"
     },
-    "extensions.supportUntrustedWorkspaces": {
-        
-    }
+    "extensions.supportUntrustedWorkspaces": {},
+    "git.openRepositoryInParentFolders": "always"
 }
