@@ -106,6 +106,9 @@
                     "keyword.operator.logical.js",
                     "keyword.operator.relational.js",
                     "keyword.operator.ternary.js",
+                    "keyword.operator.arithmetic.js",
+                    "keyword.operator.expression.in.js",
+                    "keyword.operator.assignment.compound.js",
                     "storage.type.js",
                     "storage.type.function.js",
                     "storage.type.function.arrow.js",
@@ -113,9 +116,11 @@
                     "storage.type.function.async.arrow.js",
                     "storage.modifier.async.js",
                     "entity.name.tag",
+                    "punctuation.definition.section.case-statement.js",
                     "punctuation.terminator.statement.js",
                     "punctuation.separator.comma.js",
-                    "punctuation.accessor.js"
+                    "punctuation.accessor.js",
+                    "meta.parameters.js"
                 ],
                 "settings": {
                     "foreground": "#00F",
